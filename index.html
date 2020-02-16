@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://skyplay.sky.com.br/o/sky-play-theme/images/favicon.ico">
+  <title>Filmes - New SKY Play</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="menu">
+      <div class="menu-left">
+        <div class="logo">
+          <img src="./src/assets/logo-sky.svg" alt="logo-sky">
+        </div>
+        <div class="menu-icons">
+          <a href=""><img src="./src/assets/homen.svg" alt="user"></a>
+          <a href=""><img src="./src/assets/luz.svg" alt="luz"></a>
+          <a href=""><img src="./src/assets/a-.svg" alt="minFont"></a>
+          <a href=""><img src="./src/assets/a+.svg" alt="maxfont"></a>
+        </div>
+      </div>
+      <div class="menu-center">
+        <div class="menu-play">
+          <a href="#"><img src="./src/assets/play.svg" alt="play">Play</a>
+        </div>
+      </div>
+      <div class="menu-rigth">
+        <div class="login">
+          <a href="#"><img src="./src/assets/user.svg" alt="usuario">Entrar</a>
+        </div>
+        <div class="search">
+          <a href="#"><img src="./src/assets/procurar.svg" alt="procurar"></a>
+        </div>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#">
+              <li>Home</li>
+            </a>
+            <a href="#">
+              <li>About</li>
+            </a>
+            <a href="#">
+              <li>Info</li>
+            </a>
+            <a href="#">
+              <li>Contact</li>
+            </a>
+            <a href="https://erikterwan.com/" target="_blank">
+              <li>Show me more</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sub-menu">
+      <div class="filmes"><a class="link active" href="#">Filmes</a></div>
+      <div class="series"><a class="link" href="#">Séries</a></div>
+      <div class="canais"><a class="link" href="#">Canais</a></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <a href="#"><img src="./src/assets/sky-light-default.svg" alt="logo"></a>
+      </div>
+      <div class="footer-icon">
+        <a href=""><img src="./src/assets/facebook.svg" alt="facebook"></a>
+        <a href=""><img src="./src/assets/twitter.svg" alt="twitter"></a>
+        <a href=""><img src="./src/assets/youtube.svg" alt="youtube"></a>
+        <a href=""><img src="./src/assets/instagram.svg" alt="intagran"></a>
+      </div>
+    </div>
+    <div class="container footer-main">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 footer-app">
+          <a href="">
+            <div class="baixe-app">
+              <img src="./src/assets/minha-sky.svg" alt="minha-sky">
+              <h2 class="titulo">Baixe no seu celular o app Minha SKY<br> e divirta-se.</h2>
+            </div>
+          </a>
+          <div class="loja-app">
+            <a href=""><img src="./src/assets/button-apple-store-light-default.svg" alt="app-apple"></a>
+            <a href=""><img src="./src/assets/button-google-play-light-default.svg" alt="app-play"></a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 footer-content">
+          <div class="row">
+            <div class="col-sm-6 footer-sobre">
+              <h2 class="sobre">Sobre</h2>
+              <ul>
+                <a href="">
+                  <li>Nossa História</li>
+                </a>
+                <a href="">
+                  <li>Imprensa</li>
+                </a>
+                <a href="">
+                  <li>Prêmios conquistados</li>
+                </a>
+                <a href="">
+                  <li>Credenciamento</li>
+                </a>
+                <a href="">
+                  <li>Trabalhe com a gente</li>
+                </a>
+                <a href="">
+                  <li>Promoção</li>
+                </a>
+              </ul>
+              <h2 class="sobre">Ajuda</h2>
+              <ul>
+                <a href="">
+                  <li>Central de Ajuda</li>
+                </a>
+                <a href="">
+                  <li>Manuais</li>
+                </a>
+              </ul>
+            </div>
+            <div class="col-sm-6 footer-empresa">
+              <h2 class="sobre">Nossas Responsabilidades</h2>
+              <ul>
+                <a href="">
+                  <li>Conselhos aos usuários</li>
+                </a>
+                <a href="">
+                  <li>Pesquisa Anatel</li>
+                </a>
+                <a href="">
+                  <li>Relatórios de transparência</li>
+                </a>
+                <a href="">
+                  <li>Responsabilidade social</li>
+                </a>
+                <a href="">
+                  <li>Acessibilidade</li>
+                </a>
+              </ul>
+              <a href="">
+                <h2 class="sky-empresa">SKY Empresas</h2>
+              </a>
+            </div>
+            <!--Aqui entra o conteudo footer-content mobile-->
+            <div class="col-xs-12 col-sm-6 footer-content-mobile">
+              <div class="row">
+                <div class="tabs">
+                  <div class="tab">
+                    <input type="checkbox" id="chck1">
+                    <label class="tab-label" for="chck1">Sobre</label>
+                    <div class="tab-content">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+                    </div>
+                  </div>
+                  <div class="tab">
+                    <input type="checkbox" id="chck2">
+                    <label class="tab-label" for="chck2">Ajuda</label>
+                    <div class="tab-content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                    </div>
+                  </div>
+                  <div class="tab">
+                    <input type="checkbox" id="chck2">
+                    <label class="tab-label" for="chck2">Nossa Responsabilidade</label>
+                    <div class="tab-content">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Aqui termina o arcodion mobile-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-menu">
+      <ul>
+        <a href="">
+          <li class="sBorda">Início</li>
+        </a>
+        <a href="">
+          <li>Política de Privacidade</li>
+        </a>
+        <a href="">
+          <li>Contratos Gerais</li>
+        </a>
+        <a href="">
+          <li>Contratos Pré-pagos</li>
+        </a>
+        <a href="">
+          <li>Cancelamento</li>
+        </a>
+        <a href="">
+          <li>Ouvidoria</li>
+        </a>
+        <a href="">
+          <li>Consumidor.gov</li>
+        </a>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="footer-credito">
+        <p class="credito">® Todos os direitos reservados 2018. Todas as marcas SKY e qualquer propriedade
+          intelectual
+          inserida nelas são de propriedade da SKY Internacional AG e usadas pela SKY Serviços de Banda Larga
+          LTDA.
+          mediante licença.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="./src/javascript/api.js"></script>
+
+
+</body>
+
+</html>

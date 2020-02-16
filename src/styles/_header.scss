@@ -1,0 +1,157 @@
+.sub-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  box-shadow: 3px 3px 8px rgba(0,0,0, 0.3);
+}
+
+.filmes {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.series {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.canais {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-bottom: 4px solid #fff;
+  color: #666666;
+  font-weight: 500;
+}
+
+a.link:hover {
+  width: 100%;
+  border-bottom: 4px solid #f35c58;
+  color: #f35c58;
+}
+
+a.link.active {
+  width: 100%;
+  border-bottom: 4px solid #f35c58;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f35c58;
+}
+
+.menu {
+  display: flex;
+  background: #f1f2fa;
+  height: 60px;
+  padding: 0 120px;
+  border-bottom: 1px solid #d3d0d0;
+
+  @media(max-width: 767px){
+    padding: 0 25px;
+   }
+}
+
+.menu-icons {
+  margin-top: 9px;
+  padding-left: 15px;
+
+  @media(max-width: 767px){
+    display: none;
+   }
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  width: 40%;
+
+  @media(max-width: 767px){
+    width: 50%;
+   }
+}
+
+.menu-icons img {
+  width: 24px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.menu-icons a {
+  background: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+}
+
+.menu-play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-play img {
+  width: 20px;
+  margin-right: 4px;
+}
+
+.menu-play a {
+  font-weight: 500;
+  color: #666666;
+}
+
+.menu-center {
+  display: flex;
+  align-items: center;
+  width: 40%;
+
+  @media(max-width: 767px){
+    display: none;
+   }
+}
+
+.menu-rigth img {
+  width: 16px;
+  margin-right: 6px;
+}
+
+.login a {
+  color: #666666;
+  font-weight: 500;
+}
+
+.menu-rigth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media(max-width: 767px){
+    width: 50%;
+    .login {
+      display: none;
+    }
+    .search {
+      display: none;
+   }
+}
+}
+
+.search {
+  margin-left: 30px;
+}
+
+

@@ -1,0 +1,191 @@
+.footer-icon img {
+  width: 22px;
+  margin: 0 6px;
+}
+@media(max-width: 767px){
+  .footer-icon {
+    margin-right: 10px;
+ }
+}
+
+.footer {
+  background: #f1f2fa;
+}
+
+.footer-top {
+  display: flex;
+  padding: 0 115px;
+  justify-content: space-between;
+  border-bottom: 1px solid #d3d0d0;
+  border-top: 1px solid #d3d0d0;
+  height: 60px;
+  align-items: center;
+
+  @media(max-width: 767px){
+    padding: 0 20px;
+   }
+}
+
+
+.footer-credito {
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  @media(max-width: 767px){
+    height: auto;
+    padding-left: 0;
+    padding: 20px;
+  }
+}
+
+p.credito {
+  color: #666666;
+  font-size: 14px;
+
+  @media(max-width: 767px){
+  text-align: center;
+  }
+}
+
+.footer-menu {
+  background: #fff;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding-left: 90px;
+
+  @media(max-width: 767px){
+    height: auto;
+    padding-left: 0;
+  }
+}
+
+.footer-menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+
+  @media(max-width: 767px){
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    margin: 15px;
+    align-items: center;
+    padding-left: 20px;
+   }
+}
+
+
+.footer-menu li {
+  margin: 0 6px;
+  border-left: 2px solid #000;
+  padding-left: 10px;
+  line-height: 1;
+}
+
+.footer-menu li.sBorda {
+  border-left: 0;
+
+  @media(max-width: 767px){
+    border-left: 2px solid #000;
+}
+}
+
+.footer a {
+  color: #000;
+}
+
+.footer-menu a:hover {
+  color: #f35c58;
+}
+
+.footer-app img {
+  width: 53px;
+}
+
+.baixe-app {
+  display: flex;
+  align-items: center;
+
+  @media(max-width: 767px){
+    margin-left: 10px;
+   }
+  
+}
+
+.baixe-app h2 {
+  color: #666;
+  font-size: 18px;
+  margin-left: 15px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.loja-app {
+  display: flex;
+  margin-left: 67px;
+  margin-top: 30px;
+
+  @media(max-width: 767px){
+    margin-left: 0;
+    justify-content: center;
+   }
+}
+
+.loja-app img {
+  width: 175px;
+  margin-right: 30px;
+}
+
+.footer-main {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+h2.sobre {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+}
+
+.footer-sobre ul {
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.footer-sobre li {
+  list-style: none;
+  line-height: 1.9;
+}
+
+.footer-sobre a:hover {
+  color: #f35c58;
+}
+
+.footer-empresa ul {
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.footer-empresa li {
+  list-style: none;
+  line-height: 1.9;
+}
+
+.footer-empresa a:hover {
+  color: #f35c58;
+}
+
+h2.sky-empresa {
+  font-size: 18px;
+  color: #666;
+  font-weight: 700;
+  margin-top: 47px;
+}
+
+.footer-content-mobile {
+  @media(min-width: 767px){
+    display: none;
+  }
+}
