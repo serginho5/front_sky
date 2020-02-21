@@ -899,6 +899,12 @@ h1.title {
   top: 8px;
 }
 
+@media (max-width: 767px) {
+  .swiper-slide:after {
+    right: 25px;
+  }
+}
+
 section#temidos {
   margin-bottom: 30px;
   margin-top: 20px;

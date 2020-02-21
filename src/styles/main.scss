@@ -72,6 +72,10 @@ h1.title {
   position: absolute;
   right: 10px;
   top: 8px;
+
+  @media(max-width: 767px){
+    right: 25px;
+  }
 }
 
 section#temidos {
