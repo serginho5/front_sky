@@ -213,6 +213,7 @@ a.link.active {
 @media (max-width: 767px) {
   .menu-rigth {
     width: 50%;
+    z-index: 2;
   }
   .menu-rigth .login {
     display: none;
@@ -335,9 +336,9 @@ a.link.active {
 #menu {
   position: absolute;
   width: 300px;
+  padding: 0;
   margin: -100px 148px 0 -235px;
-  padding: 50px;
-  padding-top: 125px;
+  padding-top: 113px;
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -353,8 +354,10 @@ a.link.active {
 }
 
 #menu li {
-  padding: 10px 0;
-  font-size: 22px;
+  padding: 9px 0;
+  font-size: 18px;
+  border-top: 1px solid #d3d0d0;
+  padding-left: 50px;
 }
 
 /*
@@ -429,6 +432,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #f1f2fa;
   padding: 0 115px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -645,6 +649,18 @@ h2.sky-empresa {
   }
 }
 
+@media (max-width: 768px) {
+  .col-sm-6.footer-sobre {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-sm-6.footer-empresa {
+    display: none;
+  }
+}
+
 h1 {
   margin: 0;
   line-height: 2;
@@ -680,6 +696,7 @@ input {
 
 /* Accordion styles */
 .tabs {
+  width: 100%;
   border-radius: 8px;
   overflow: hidden;
   -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
@@ -700,14 +717,19 @@ input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1em;
-  background: #2c3e50;
-  font-weight: bold;
   cursor: pointer;
+  background: #d3d4dc;
+  font-size: 18px;
+  font-weight: 600;
+  color: #66666b;
+  padding-right: 40px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #a29f9f;
   /* Icon */
 }
 
 .tab-label:hover {
-  background: #1a252f;
+  background: #bdbdc3;
 }
 
 .tab-label::after {
@@ -737,16 +759,16 @@ input {
           justify-content: flex-end;
   padding: 1em;
   font-size: 0.75em;
-  background: #2c3e50;
+  background: #bdbdc3;
   cursor: pointer;
 }
 
 .tab-close:hover {
-  background: #1a252f;
+  background: #bdbdc3;
 }
 
 input:checked + .tab-label {
-  background: #1a252f;
+  background: #bdbdc3;
 }
 
 input:checked + .tab-label::after {
@@ -757,5 +779,140 @@ input:checked + .tab-label::after {
 input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
+}
+
+.col-xs-12.col-sm-6.footer-content-mobile {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.col-xs-12.col-sm-6.footer-content-mobile .tab-content li {
+  list-style: none;
+  line-height: 1.9;
+}
+
+.col-xs-12.col-sm-6.footer-content-mobile ul {
+  padding-left: 20px;
+}
+
+.col-xs-12.col-sm-6.footer-content-mobile a:hover {
+  color: #e1413e !important;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+section.banner {
+  margin-top: 40px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 20px !important;
+  height: 3px !important;
+  margin: 5px 4px !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #f35c58 !important;
+}
+
+.owl-item.active.center {
+  border-radius: 6px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.38);
+          box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.38);
+}
+
+.owl-item.active {
+  position: relative;
+  -webkit-transform: scale(0.89486);
+          transform: scale(0.89486);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.owl-theme .owl-nav {
+  padding: 0 24px;
+  position: absolute;
+  top: 57px;
+}
+
+.swiper-slide img {
+  width: 212px;
+  border-radius: 6px;
+}
+
+.swiper-wrapper {
+  margin-left: 30px;
+}
+
+@media (max-width: 767px) {
+  .swiper-wrapper {
+    margin-left: 0px;
+  }
+}
+
+h1.title {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  margin-left: 50px;
+}
+
+.swiper-slide:after {
+  content: url(../assets/cadeado.png);
+  z-index: 1;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+section#temidos {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+section#nacional {
+  margin-bottom: 30px;
+}
+
+section#dc {
+  margin-bottom: 30px;
+}
+
+section#marvel {
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=main.css.map */

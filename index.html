@@ -8,17 +8,22 @@
   <title>Filmes - New SKY Play</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+  <link rel="stylesheet" href="./src/styles/swiper.min.css">
   <link rel="stylesheet" href="./src/styles/main.css">
+
 </head>
+
 
 <body>
   <div class="header">
     <div class="menu">
       <div class="menu-left">
         <div class="logo">
-          <img src="./src/assets/logo-sky.svg" alt="logo-sky">
+          <a href="#">
+            <img src="./src/assets/logo-sky.svg" alt="logo-sky">
+          </a>
         </div>
         <div class="menu-icons">
           <a href=""><img src="./src/assets/homen.svg" alt="user"></a>
@@ -49,17 +54,35 @@
               <li>Home</li>
             </a>
             <a href="#">
-              <li>About</li>
+              <li>
+                <div class="">
+                  <a href=""><img src="./src/assets/homen.svg" alt="user"></a>
+                  <a href=""><img src="./src/assets/luz.svg" alt="luz"></a>
+                  <a href=""><img src="./src/assets/a-.svg" alt="minFont"></a>
+                  <a href=""><img src="./src/assets/a+.svg" alt="maxfont"></a>
+                </div>
+              </li>
             </a>
             <a href="#">
-              <li>Info</li>
+              <li>
+                <div class="">
+                  <a href="#"><img src="./src/assets/play.svg" alt="play">Play</a>
+                </div>
+              </li>
             </a>
             <a href="#">
-              <li>Contact</li>
+              <li>
+                <div class="">
+                  <a href="#"><img src="./src/assets/user.svg" alt="usuario">Entrar</a>
+                </div>
+              </li>
             </a>
-            <a href="https://erikterwan.com/" target="_blank">
-              <li>Show me more</li>
-            </a>
+            <a href="#">
+              <li>
+                <div class="">
+                  <a href="#"><img src="./src/assets/procurar.svg" alt="procurar"></a>
+                </div>
+              </li>
           </ul>
         </div>
       </div>
@@ -69,7 +92,218 @@
       <div class="series"><a class="link" href="#">Séries</a></div>
       <div class="canais"><a class="link" href="#">Canais</a></div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
+
+  <section class="banner">
+    <div id="mais-temidos" class="owl-carousel owl-theme">
+      <div class="item"><a href="#">
+          <svg width="100%" viewBox="10 10 410 270">
+            <rect x="10" y="10" rx="10" ry="10" width="100%" height="100%" class="bgLazyLoad" stroke="none"></rect>
+          </svg>
+          <img
+            src="https://d3bntrzcei186j.cloudfront.net/fit-in/1920x1080/images/sky-content-hub-prd/5afc25a391e93f47248f1064/5a563880332c65000165b739_2_1920x1080.jpeg"
+            alt=""></a></div>
+      <div class="item">
+        <svg width="100%" viewBox="10 10 410 270">
+          <rect x="10" y="10" rx="10" ry="10" width="100%" height="100%" class="bgLazyLoad" stroke="none"></rect>
+        </svg><a href="#"><img
+            src="https://d3bntrzcei186j.cloudfront.net/fit-in/1920x1080/images/sky-content-hub-prd/5dd303df66deeb42773e1d31/5a563880332c65000165b739_2_1920x1080.jpeg"
+            alt=""></a></div>
+      <div class="item">
+        <svg width="100%" viewBox="10 10 410 270">
+          <rect x="10" y="10" rx="10" ry="10" width="100%" height="100%" class="bgLazyLoad" stroke="none"></rect>
+        </svg><a href="#"><img
+            src="https://d3bntrzcei186j.cloudfront.net/fit-in/1920x1080/images/sky-content-hub-prd/5d1d6f658002f31be46c1572/5a563880332c65000165b739_2_1920x1080.jpeg"
+            alt=""></a></div>
+      <div class="item">
+        <svg width="100%" viewBox="10 10 410 270">
+          <rect x="10" y="10" rx="10" ry="10" width="100%" height="100%" class="bgLazyLoad" stroke="none"></rect>
+        </svg>
+        <a href="#"><img
+            src="https://d3bntrzcei186j.cloudfront.net/fit-in/1920x1080/images/sky-content-hub-prd/5d1202be53825265a38eb2e7/5a2b35b13c44c90001a5034e_2_1920x1080.jpeg"
+            alt=""></a></div>
+      <div class="item">
+        <svg width="100%" viewBox="10 10 410 270">
+          <rect x="10" y="10" rx="10" ry="10" width="100%" height="100%" class="bgLazyLoad" stroke="none"></rect>
+        </svg>
+        <a href="#"><img
+            src="https://d3bntrzcei186j.cloudfront.net/fit-in/1920x1080/images/sky-content-hub-prd/5d42abef762cd8056bdc8647/5a563880332c65000165b739_2_1920x1080.jpeg"
+            alt=""></a></div>
+    </div>
+  </section>
+
+  <section id="temidos">
+    <div class="swiper-container">
+      <h1 class="title">Os mais Temidos</h1>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#">
+            <img class="imgBox"
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5afffea9c7c80900d54022c4/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/300x450/images/sky-content-hub-prd/5afda2776813b50542cd11df/5a563880332c65000165b739_3_300x450.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/300x450/images/sky-content-hub-prd/5ba6a8e25b80edeedc103b79/5a563880332c65000165b739_3_300x450.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5bb48af108d27e5f2f67c288/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5da7b6395c423166927a7a84/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/300x450/images/sky-content-hub-prd/5d021244323c834d4c20fdfe/5a563880332c65000165b739_3_300x450.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5b008742181654506ca69458/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/288x432/images/sky-content-hub-prd/5b96d7d481a507897e5dc992/5a563880332c65000165b739_3_288x432.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5b0016f3fdd1c54e9b1b8bbb/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5d00c0c384e14d64578d7520/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="nacional">
+    <div class="swiper-container">
+      <h1 class="title">Coletanea nacional</h1>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#">
+            <img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5d00c0c384e14d64578d7520/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5b0016f3fdd1c54e9b1b8bbb/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/288x432/images/sky-content-hub-prd/5b96d7d481a507897e5dc992/5a563880332c65000165b739_3_288x432.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5affd0efa2ccaf31aefa0f99/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5b008742181654506ca69458/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/300x450/images/sky-content-hub-prd/5bb43d9e875fbc7fbbebfa6e/5a563880332c65000165b739_3_300x450.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5d6f13a5c14c8909a600bac0/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5d972dc621db5c6dfd2afa5c/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5d94b46f27ce93e63b89f725/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5d00c0c784e14deb238d7926/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dc">
+    <div class="swiper-container">
+      <h1 class="title">DC comics</h1>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#">
+            <img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5d00c0c784e14deb238d7926/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5d94b46f27ce93e63b89f725/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5d972dc621db5c6dfd2afa5c/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/220x340/images/sky-content-hub-prd/5bb3070758ce872b07e4c1a1/5a563880332c65000165b739_3_220x340.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5af979d174d04d570ab73d9f/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5d5c3bc3eab322f4ff3dfd9d/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5bb48af108d27e5f2f67c288/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/288x432/images/sky-content-hub-prd/5b96d7d481a507897e5dc992/5a563880332c65000165b739_3_288x432.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5b0016f3fdd1c54e9b1b8bbb/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/300x450/images/sky-content-hub-prd/5afda2776813b50542cd11df/5a563880332c65000165b739_3_300x450.jpeg"
+              alt=""></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="marvel">
+    <div class="swiper-container">
+      <h1 class="title">Marvel</h1>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#">
+            <img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5afba55a34e619555a91d6ea/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5d488b5099050119b664f64b/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5bae7dc31c0b8b0a188f326d/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5c540afecaa4ee405eb9fc1e/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/300x450/images/sky-content-hub-prd/5afda2776813b50542cd11df/5a563880332c65000165b739_3_300x450.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5d5c3bc3eab322f4ff3dfd9d/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5da7b6395c423166927a7a84/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5af979d174d04d570ab73d9f/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/1000x1500/images/sky-content-hub-prd/5d6f13a5c14c8909a600bac0/5a563880332c65000165b739_3_1000x1500.jpeg"
+              alt=""></a></div>
+        <div class="swiper-slide"><a href="#"><img
+              src="https://d3bntrzcei186j.cloudfront.net/fit-in/300x450/images/sky-content-hub-prd/5ba6a8e25b80edeedc103b79/5a563880332c65000165b739_3_300x450.jpeg"
+              alt=""></a></div>
+      </div>
+    </div>
+  </section>
 
   <div class="footer">
     <div class="footer-top">
@@ -162,21 +396,70 @@
                     <input type="checkbox" id="chck1">
                     <label class="tab-label" for="chck1">Sobre</label>
                     <div class="tab-content">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+                      <ul>
+                        <a href="">
+                          <li>Nossa História</li>
+                        </a>
+                        <a href="">
+                          <li>Imprensa</li>
+                        </a>
+                        <a href="">
+                          <li>Prêmios conquistados</li>
+                        </a>
+                        <a href="">
+                          <li>Credenciamento</li>
+                        </a>
+                        <a href="">
+                          <li>Trabalhe com a gente</li>
+                        </a>
+                        <a href="">
+                          <li>Promoção</li>
+                        </a>
+                      </ul>
                     </div>
                   </div>
                   <div class="tab">
                     <input type="checkbox" id="chck2">
                     <label class="tab-label" for="chck2">Ajuda</label>
                     <div class="tab-content">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                      <ul>
+                        <a href="">
+                          <li>Central de Ajuda</li>
+                        </a>
+                        <a href="">
+                          <li>Manuais</li>
+                        </a>
+                      </ul>
                     </div>
                   </div>
                   <div class="tab">
-                    <input type="checkbox" id="chck2">
-                    <label class="tab-label" for="chck2">Nossa Responsabilidade</label>
+                    <input type="checkbox" id="chck3">
+                    <label class="tab-label" for="chck3">Nossa Responsabilidade</label>
                     <div class="tab-content">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                      <ul>
+                        <a href="">
+                          <li>Conselhos aos usuários</li>
+                        </a>
+                        <a href="">
+                          <li>Pesquisa Anatel</li>
+                        </a>
+                        <a href="">
+                          <li>Relatórios de transparência</li>
+                        </a>
+                        <a href="">
+                          <li>Responsabilidade social</li>
+                        </a>
+                        <a href="">
+                          <li>Acessibilidade</li>
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="tab">
+                    <input type="checkbox" id="chck4">
+                    <label class="tab-label" for="chck4">Sky empresas</label>
+                    <div class="tab-content">
+                      <a href="#">Entre em contato conosco</a>
                     </div>
                   </div>
                 </div>
@@ -224,17 +507,68 @@
     </div>
   </div>
 
-
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="./src/javascript/api.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script src="./src/javascript/api.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js.map"></script>
+  <script src="./src/javascript/jquery.flexslider.js"></script>
+  <script src="./src/javascript/swiper.min.js"></script>
 
 
+  <script>
+    $(document).ready(function () {
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+        stagePadding: 0,
+        margin: 10,
+        center: true,
+        nav: false,
+        loop: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 3
+          }
+        }
+      })
+    })
+  </script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        '@0.00': {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        '@0.75': {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        '@1.00': {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        '@1.50': {
+          slidesPerView: 6,
+          spaceBetween: 10,
+        },
+      }
+    });
+  </script>
 </body>
 
 </html>

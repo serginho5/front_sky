@@ -114,10 +114,9 @@
  {
    position: absolute;
    width: 300px;
+   padding: 0;
    margin: -100px 148px 0 -235px;
-   padding: 50px;
-   padding-top: 125px;
-   
+   padding-top: 113px;
    background: #ededed;
    list-style-type: none;
    -webkit-font-smoothing: antialiased;
@@ -131,8 +130,10 @@
  
  #menu li
  {
-   padding: 10px 0;
-   font-size: 22px;
+   padding: 9px 0;
+   font-size: 18px;
+   border-top: 1px solid #d3d0d0;
+   padding-left: 50px;
  }
  
  /*
@@ -142,3 +143,4 @@
  {
    transform: none;
  }
+

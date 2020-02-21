@@ -7,22 +7,20 @@ $(document).ready(function () {
     dataType: "json",
     success: function (data) {
       var pos = data[2].movies;
-      /*function getImagem(pos) {
-        var imagem = [pos.images[1]].join(" ");
-        console.log(imagem);
-        return imagem;
-      }
-      function addImagem() {
-        document.getElementById("banner").innerHTML = pos.map(getImagem);
-      }
-      addImagem('');
-      */
-      console.log(pos);
-    },
-    error: function (error) {
-      console.log(error);
-    }
+      updateDOM(pos)
 
+      function updateDOM(data) {
+        for (let i = 0; i <= 10; i++) {
+          let suspense = data[i].categories;
+          if (suspense.match(/Aventura/)) {
+            let imageUrl = data[i].images[0].url;
+            $('.').append("<div class='carousel-cell'><a href='#'><img src='" + imageUrl + "'/><br/>" + suspense + "</a></div>");
+
+            console.log(imageUrl);
+          }
+        };
+      }
+    },
   })
 
 })

@@ -4,4 +4,89 @@
 @import "./variaveis";
 @import "./footer";
 @import "./arcodion";
+@import "./carrocel";
 
+section.banner {
+  margin-top: 40px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 20px!important;
+  height: 3px!important;
+  margin: 5px 4px!important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #f35c58!important;
+}
+
+.owl-item.active.center {
+  border-radius: 6px;
+  transform: scale(1);
+}
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.38);
+}
+
+.owl-item.active {
+  position: relative;
+  transform: scale(0.89486);
+  transition: transform 0.3s;
+}
+
+.owl-theme .owl-nav {
+  padding: 0 24px;
+  position: absolute;
+  top: 57px;
+}
+
+.swiper-slide img {
+  width: 212px;
+  border-radius: 6px;
+}
+
+.swiper-wrapper {
+  margin-left: 30px;
+
+  @media(max-width: 767px){
+    margin-left: 0px;
+  }
+}
+
+h1.title {
+  font-weight: 600;
+  display: flex;
+  font-size: 24px;
+  margin-left: 50px;
+}
+
+.swiper-slide:after {
+  content: url(../assets/cadeado.png);
+  z-index: 1;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+section#temidos {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+section#nacional {
+  margin-bottom: 30px;
+}
+
+section#dc {
+  margin-bottom: 30px;
+}
+
+section#marvel {
+  margin-bottom: 50px;
+}
